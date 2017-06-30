@@ -96,7 +96,7 @@ transition: all 0.5s;
 .cont_img_back_grey > img {
   width: 100%;
 opacity: 1;
-animation-name: animar_fondo;
+
 margin-left: 10px;   
 margin-top: 10px;
 
@@ -105,7 +105,7 @@ margin-top: 10px;
 
 .cont_img_back_ {
   position: absolute;
-  width: 50%;
+  width: 100%;
 top:0px;
   left: -1px;
 }
@@ -113,7 +113,7 @@ top:0px;
 .cont_img_back_ > img {
   width: 100%;
 opacity: 0.3;
-animation-name: animar_fondo;
+
 
 }
 
@@ -344,4 +344,18 @@ p{
 .h5{
     font-style: normal;
     color: white;
+}
+
+.animate-left{
+    position:relative;
+    animation:animateleft 0.4s}
+@keyframes animateleft{
+    from{left:-300px;opacity:0}
+    to{left:0;opacity:1}}
+.animate-opacity{
+    animation:opac 0.8s
+}
+@keyframes opac{
+    from{opacity:0} 
+    to{opacity:1}
 }

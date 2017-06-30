@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>landing Page</title>
   
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
       <link rel="stylesheet" href="css/style.css">
 </head>
+  
 <body>
   <div class="cotn_principal">
 <div class="cont_centrar">
@@ -19,7 +20,7 @@
 <div class="col_md_sign_up">
 <div class="cont_ba_opcitiy"><br>
     <a href="http://www.placio.in"><img src="http://www.placio.in/frontend/web/uploads/logo/6166-logo.png" onclick="cambiar_sign_up()"></a>
-  <h2>ENQUIRY NOW</h2>
+  <h2>ENQUIRED NOW</h2>
        <p>Sign up with Placio and fulfill your accommodation needs.</p><br>
 <input type="text" placeholder="Name" />
 <input type="text" placeholder="Email" />
@@ -35,8 +36,14 @@
   </div>     
     <div class="cont_back_info">
        <div class="cont_img_back_grey">
-       <img class="mySlides" src="img/banners.jpg" style="width:100%">
-       <img class="mySlides" src="img/banners2.jpg" style="width:100%">
+       <img class="mySlides animate-left" src="img/banners.jpg" style="width:100%">
+       <img class="mySlides animate-left" src="img/banners2.jpg" style="width:100%">
+        <img class="mySlides animate-left" src="img/slide1.jpg" style="width:100%">
+       <img class="mySlides animate-left" src="img/slide2.jpg" style="width:100%">
+        <img class="mySlides animate-left" src="img/slide3.jpg" style="width:100%">
+       <img class="mySlides animate-left" src="img/slide4.jpg" style="width:100%">
+             <img class="mySlides animate-left" src="img/slide5.jpg" style="width:100%">
+        <img class="mySlides animate-left" src="img/slide6.jpg" style="width:100%">
        </div>
        
     </div>
@@ -44,10 +51,10 @@
   </div>
  </div>
 </div>
-  
-<style>
+    <style>
 .mySlides {display:none;}
 </style> 
+
 <script>
 var myIndex = 0;
 carousel();
@@ -61,7 +68,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000); // Change image every 2 seconds
+    setTimeout(carousel, 3000); // Change image every 3 seconds
 }
 </script>
 
