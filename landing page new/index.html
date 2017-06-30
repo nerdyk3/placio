@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>landing Page</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cotn_principal">
+<div class="cont_centrar">
+<div class="cont_login">
+<div class="cont_info_log_sign_up">
+      <div class="col_md_login">
+      </div> 
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy"><br>
+    <a href="http://www.placio.in"><img src="http://www.placio.in/frontend/web/uploads/logo/6166-logo.png" onclick="cambiar_sign_up()"></a>
+  <h2>ENQUIRY NOW</h2>
+       <p>Sign up with Placio and fulfill your accommodation needs.</p><br>
+<input type="text" placeholder="Name" />
+<input type="text" placeholder="Email" />
+<input type="text" placeholder="Contact number" />
+    <br>
+<button class="btn_sign_up" >SUBMIT</button>
+    <footer>
+        <br>
+    <h5>&copy; Placio(Rental stay pvt. ltd.) 2017 <br>| +917053109531</h5>
+    </footer>
+  </div>
+</div>
+  </div>     
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img class="mySlides" src="img/banners.jpg" style="width:100%">
+       <img class="mySlides" src="img/banners2.jpg" style="width:100%">
+       </div>
+       
+    </div>
+    
+  </div>
+ </div>
+</div>
+  
+<style>
+.mySlides {display:none;}
+</style> 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
