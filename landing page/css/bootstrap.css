@@ -79,6 +79,7 @@ sup {
 }
 sup {
   top: -.5em;
+    margin-top:-145%;
 }
 sub {
   bottom: -.25em;
